@@ -1,0 +1,185 @@
+
+
+/*======================
+   01. Google fonts
+========================*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap');
+
+/*======================
+   02. Basic css
+========================*/
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+strong,
+i,
+ol,
+ul,
+li,
+form,
+label,
+footer,
+header,
+menu,
+nav,
+section {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	line-height: 26px;
+	background: #ffffff;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+button:focus, input:focus, textarea:focus {
+	outline: 0;
+}
+
+
+.product_wrapper {
+	background: linear-gradient(257deg, rgba(24,110,242,1) 0%, rgba(109,24,239,1) 100%);
+	padding: 80px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.product-img-mini-active img {
+	width: 100px !important;
+	height: 100px;
+	object-fit: cover;
+	margin-top: 40px;
+	cursor: pointer;
+	border: 2px solid transparent;
+}
+
+.product-img-mini-active .slick-prev,
+.product-img-mini-active .slick-next {
+    background: transparent;
+    border: transparent;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 40px;
+}
+
+.product-img-mini-active .slick-prev {
+	left: -30px;
+}
+
+.product-img-mini-active .slick-next {
+	right: -30px;
+}
+
+.product-img-mini-active .slick-current img {
+	border: 2px solid #000000;
+}
+
+.review_box i {
+	font-size: 15px;
+	color: #fe9704;
+}
+
+.review_box span {
+	font-size: 14px;
+	color: #ffffff;
+	margin-left: 15px;
+}
+
+.product_box h2 {
+	font-size: 40px;
+	font-weight: 700;
+	color: #ffffff;
+	margin-top: 20px;
+}
+
+.dollar_text {
+	font-size: 16px;
+	margin-top: 10px;
+} 
+
+.dollar_text span {
+	text-decoration: line-through;
+}
+
+.product_hurry {
+	font-size: 14px;
+	margin-top: 20px;
+}
+
+.product_hurry span {
+	background: #000000;
+	display: inline-block;
+	padding: 5px;
+	color: #ffffff;
+	border-radius: 5px;
+	line-height: 20px;
+	font-size: 14px;
+}
+
+.availablity_text {
+	font-weight: 600;
+	font-size: 15px;
+	margin-top: 20px;
+}
+
+.availablity_text span {
+	font-size: 13px;
+	margin-left: 10px;
+}
+
+.chocolate-tag a {
+	font-size: 13px;
+	background: #ffffff;
+	padding: 5px 10px;
+	border-radius: 4px;
+	color: #000000;
+	display: inline-block;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+.buy-btn a {
+	border: 1px solid #000000;
+	color: #000000;
+	padding: 7px 20px;
+	display: inline-block;
+	border-radius: 5px;
+	margin-top: 20px;
+	margin-right: 15px;
+	transition: .3s;
+}
+
+.buy-btn a:hover {
+	background: #ffffff;
+	color: #000000;
+	border: 1px solid transparent;
+}
+
+.para_font {
+	font-size: 15px;
+	font-weight: 400;
+	margin-top: 20px;
+}

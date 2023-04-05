@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="app, landing, corporate, Creative, Html Template, Template">
+    <meta name="author" content="web-themes">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- title -->
+    <title>Product details page</title>
+
+    <!-- favicon -->
+    <!-- <link href="img/favicon.png" type="image/png" rel="icon"> -->
+
+    <!-- all css here -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/fontawesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/slick.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+    <div class="product_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="product-img-main-active">
+                        <img class="img-fluid" src="img/p-1.jpg" alt="">
+                        <img class="img-fluid" src="img/p-2.jpg" alt="">
+                        <img class="img-fluid" src="img/p-3.jpg" alt="">
+                        <img class="img-fluid" src="img/p-4.jpg" alt="">
+                        <img class="img-fluid" src="img/p-5.jpg" alt="">
+                        <img class="img-fluid" src="img/p-6.jpg" alt="">
+                        <img class="img-fluid" src="img/p-1.jpg" alt="">
+                        <img class="img-fluid" src="img/p-2.jpg" alt="">
+                        <img class="img-fluid" src="img/p-3.jpg" alt="">
+                        <img class="img-fluid" src="img/p-4.jpg" alt="">
+                        <img class="img-fluid" src="img/p-5.jpg" alt="">
+                        <img class="img-fluid" src="img/p-6.jpg" alt="">
+                    </div>
+                    <div class="product-img-mini-active">
+                        <img class="img-fluid" src="img/p-1.jpg" alt="">
+                        <img class="img-fluid" src="img/p-2.jpg" alt="">
+                        <img class="img-fluid" src="img/p-3.jpg" alt="">
+                        <img class="img-fluid" src="img/p-4.jpg" alt="">
+                        <img class="img-fluid" src="img/p-5.jpg" alt="">
+                        <img class="img-fluid" src="img/p-6.jpg" alt="">
+                        <img class="img-fluid" src="img/p-1.jpg" alt="">
+                        <img class="img-fluid" src="img/p-2.jpg" alt="">
+                        <img class="img-fluid" src="img/p-3.jpg" alt="">
+                        <img class="img-fluid" src="img/p-4.jpg" alt="">
+                        <img class="img-fluid" src="img/p-5.jpg" alt="">
+                        <img class="img-fluid" src="img/p-6.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="product_box">
+                        <div>
+                            <div class="review_box d-flex align-items-center">
+                                <div>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>3 reviews</span>
+                            </div>
+                            
+                            <h2>Candy nut chocolate</h2>
+                            <p class="dollar_text">€11,00 <span>€19,00</span></p>
+                            <p class="product_hurry">Hurry up! only <span>77</span> products left in stock!</p>
+                            <p class="availablity_text">Availability: <span>In stock <i class="far fa-check"></i></span></p>
+                            <p class="availablity_text">Flavor</p>
+                            <div class="chocolate-tag">
+                                <a href="#">Sponge</a>
+                                <a href="#">Cheesecake</a>
+                                <a href="#">Vanilla</a>
+                            </div>
+                            <div class="buy-btn">
+                                <a href="#">Add to cart</a>
+                                <a href="#">buy now</a>
+                            </div>
+                            <p class="para_font">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <!-- all js here -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script>
+        
+         $('.product-img-main-active').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          asNavFor: '.product-img-mini-active',
+          arrows: false,
+          autoplaySpeed: 3000,
+        });
+        $('.product-img-mini-active').slick({
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          asNavFor: '.product-img-main-active',
+          dots: false,
+          centerMode: true,
+          focusOnSelect: true,
+          arrows: true,
+          prevArrow:'<button type="button" class="slick-prev"><i class="far fa-arrow-left"></i></button>',
+          nextArrow:'<button type="button" class="slick-next"><i class="far fa-arrow-right"></i></button>',
+        });
+
+        // product counter start
+        $(function(){
+            $('.product-spinner input[type="number"]').niceNumber();
+         });
+
+    </script>
+</body>
+</html>
